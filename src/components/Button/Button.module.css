@@ -1,3 +1,29 @@
 .button {
-  background: red;
+  background-color: transparent;
+  border-radius: 3em;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 11px 20px;
+}
+
+.primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+
+.small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+
+.large {
+  font-size: 16px;
+  padding: 12px 24px;
 }
