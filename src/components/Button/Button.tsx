@@ -2,26 +2,8 @@ import React, { ComponentProps } from 'react';
 import classnames from 'classnames';
 
 import styles from './Button.module.css';
-
-export const Intent = {
-  None: undefined,
-  Primary: 'primary',
-  Secondary: 'secondary',
-  Warning: 'warning',
-  Success: 'success',
-  Danger: 'danger',
-} as const;
-
-type Intent = typeof Intent[keyof typeof Intent];
-
-export const Size = {
-  None: undefined,
-  Small: 'small',
-  Large: 'large',
-} as const;
-
-type Size = typeof Size[keyof typeof Size];
-
+import { Intent } from '../../common/intent';
+import { Size } from '../../common/size';
 
 export interface Props extends ComponentProps<'button'> {
   intent?: Intent;

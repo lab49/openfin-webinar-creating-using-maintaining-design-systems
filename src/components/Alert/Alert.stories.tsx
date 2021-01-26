@@ -1,23 +1,15 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import { Button, Props } from './Button';
-import { Size } from '../../common/size';
+import { Alert } from './Alert';
 import { Intent } from '../../common/intent';
 
 export default {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Alert',
+  component: Alert,
   argTypes: {
-    label: {
-      defaultValue: 'Button',
-    },
-    size: {
-      control: {
-        type: 'select',
-        defaultOption: Size.None,
-        options: Size,
-      }
+    children: {
+      defaultValue: 'Alert dialog'
     },
     intent: {
       control: {
@@ -26,22 +18,12 @@ export default {
         options: Intent,
       }
     }
-  },
+  }
 } as Meta;
 
-const Template: Story<Props> = (args) => <Button {...args} />;
+const Template: Story = (args) => <Alert {...args} />;
 
 export const Default = Template.bind({});
-
-export const SizeLarge = Template.bind({});
-SizeLarge.args = {
-  size: Size.Large,
-};
-
-export const SizeSmall = Template.bind({});
-SizeSmall.args = {
-  size: Size.Small,
-};
 
 export const IntentPrimary = Template.bind({});
 IntentPrimary.args = {
