@@ -1,40 +1,42 @@
-import React from 'react';
+import React, { ComponentProps } from 'react';
 import classnames from 'classnames';
 
 import styles from './Button.module.css';
 
-export interface Props {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'large';
-  /**
-   * Button contents
-   */
+export const Intent = {
+  None: undefined,
+  Primary: 'primary',
+  Secondary: 'secondary',
+  Warning: 'warning',
+  Success: 'success',
+  Danger: 'danger',
+} as const;
+
+type Intent = typeof Intent[keyof typeof Intent];
+
+export const Size = {
+  None: undefined,
+  Small: 'small',
+  Large: 'large',
+} as const;
+
+type Size = typeof Size[keyof typeof Size];
+
+
+export interface Props extends ComponentProps<'button'> {
+  intent?: Intent;
+  size?: Size;
   label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
 }
 
 export const Button = ({
-  primary = false,
+  intent,
   size,
-  backgroundColor,
   label,
   ...props
 }: Props): JSX.Element => {
   const cls = classnames(styles.button, {
-    [styles.primary]: primary,
+    [styles[intent ?? '']]: intent != null,
     [styles[size ?? '']]: size != null,
   });
 
@@ -42,7 +44,6 @@ export const Button = ({
     <button
       type="button"
       className={cls}
-      style={{ backgroundColor }}
       {...props}
     >
       {label}
