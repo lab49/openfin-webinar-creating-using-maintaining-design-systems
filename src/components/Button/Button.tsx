@@ -6,18 +6,20 @@ import { Intent } from '../../common/intent';
 import { Size } from '../../common/size';
 
 export interface Props extends ComponentProps<'button'> {
+  className?: string;
   intent?: Intent;
   size?: Size;
   label: string;
 }
 
 export const Button = ({
+  className,
   intent,
   size,
   label,
   ...props
 }: Props): JSX.Element => {
-  const cls = classnames(styles.button, {
+  const cls = classnames(styles.button, className, {
     [styles[intent ?? '']]: intent != null,
     [styles[size ?? '']]: size != null,
   });

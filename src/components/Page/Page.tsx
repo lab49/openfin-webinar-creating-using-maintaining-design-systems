@@ -1,7 +1,10 @@
 import React from 'react';
+import { Intent } from '../../common/intent';
+import { Alert } from '../Alert';
+import { Badge } from '../Badge';
 
-import { Header } from './Header';
-import './page.css';
+import { Header } from '../Header/Header';
+import styles from './Page.module.css';
 
 export interface PageProps {
   user?: {};
@@ -10,12 +13,15 @@ export interface PageProps {
   onCreateAccount: () => void;
 }
 
-export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <article>
+export const Page: React.FunctionComponent<PageProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
+  <div>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
-    <section>
-      <h2>Pages in Storybook</h2>
+    <div className={styles.content}>
+      <h2 className={styles.subtitle}>Welcome to the OpenFin webinar!</h2>
+
+      <Alert className={styles.pageAlert} intent={Intent.Primary}>This is a static example of a page that could exist in your application.</Alert>
+
       <p>
         We recommend building UIs with a{' '}
         <a href="https://componentdriven.org" target="_blank" rel="noopener noreferrer">
@@ -23,11 +29,13 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
         </a>{' '}
         process starting with atomic components and ending with pages.
       </p>
+
       <p>
         Render pages with mock data. This makes it easy to build and review page states without
         needing to navigate to them in your app. Here are some handy patterns for managing page data
         in Storybook:
       </p>
+
       <ul>
         <li>
           Use a higher-level connected component. Storybook helps you compose such data from the
@@ -38,6 +46,7 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
           using Storybook.
         </li>
       </ul>
+
       <p>
         Get a guided tutorial on component-driven development at{' '}
         <a href="https://www.learnstorybook.com" target="_blank" rel="noopener noreferrer">
@@ -49,8 +58,10 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
         </a>
         .
       </p>
+
       <div className="tip-wrapper">
-        <span className="tip">Tip</span> Adjust the width of the canvas with the{' '}
+        <Badge intent={Intent.Success} pill>Tip</Badge> Adjust the width of the canvas with the{' '}
+
         <svg width="10" height="10" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fillRule="evenodd">
             <path
@@ -62,6 +73,6 @@ export const Page: React.FC<PageProps> = ({ user, onLogin, onLogout, onCreateAcc
         </svg>
         Viewports addon in the toolbar
       </div>
-    </section>
-  </article>
+    </div>
+  </div>
 );

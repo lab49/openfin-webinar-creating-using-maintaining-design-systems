@@ -1,0 +1,40 @@
+.badge {
+  background: var(--color-blue-gray-100);
+  border-radius: .3em;
+  display: inline-block;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .8em;
+  font-weight: 500;
+  padding: .2em .4em;
+  min-width: 40px;
+  text-align: center;
+}
+
+.pill {
+  border-radius: 100px;
+}
+
+.primary {
+  background-color: var(--color-blue-500);
+  color: var(--color-blue-gray-50);
+}
+
+.secondary {
+  background-color: var(--color-blue-gray-200);
+  color: var(--color-blue-gray-900);
+}
+
+.warning {
+  background-color: var(--color-amber-500);
+  color: var(--color-blue-gray-50);
+}
+
+.success {
+  background-color: var(--color-green-500);
+  color: var(--color-blue-gray-50);
+}
+
+.danger {
+  background-color: var(--color-red-500);
+  color: var(--color-blue-gray-50);
+}
