@@ -3,6 +3,64 @@ import { Badge } from '../components/Badge';
 
 <Meta title="Styleguide/Typography" />
 
+export const baseStyle = {
+  border: '1px solid rgba(0, 0, 0, 0.2)',
+  borderRadius: 5,
+  padding: 40,
+}
+
 # Typography
 
-<Badge>Typography</Badge>
+This would be a good place to write about your typography system. Just like the other
+sections in this styleguide, guidelines about how to use these type styles, examples,
+and a11y guidelines are all appropriate.
+
+### Primary
+
+<p style={{ ...baseStyle, font: 'var(--type-style-primary)' }}>Primary headline style</p>
+
+### Secondary
+
+<p style={{ ...baseStyle, font: 'var(--type-style-secondary)' }}>Secondary headline style</p>
+
+### Tertiary
+
+<p style={{ ...baseStyle, font: 'var(--type-style-tertiary)' }}>Tertiary headline style</p>
+
+### General Label
+
+<p style={{ ...baseStyle, font: 'var(--type-style-general-label)' }}>General label style</p>
+
+### Secondary Label
+
+<p style={{ ...baseStyle, font: 'var(--type-style-secondary-label)' }}>Secondary label style</p>
+
+<div style={baseStyle}>
+  <p>Body copy style</p>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat
+    vitae elit et porta. Vivamus eu pellentesque nulla. Suspendisse lobortis
+    mi id libero pretium varius. Nulla quis luctus quam. Sed aliquet nunc ut
+    felis faucibus, at porta justo semper. Etiam egestas ligula in urna molestie,
+    id molestie metus pretium. Maecenas sed cursus mauris, condimentum elementum
+    lacus. Mauris blandit ex tortor, vel vestibulum elit vestibulum id. Phasellus
+    viverra rhoncus malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing
+    elit. Etiam urna augue, tincidunt in faucibus a, eleifend ut leo. Fusce
+    faucibus nulla at ipsum dictum venenatis. Suspendisse pellentesque mi magna,
+    in sodales augue lacinia lobortis. Maecenas quis quam turpis.
+  </p>
+
+  <p>
+    Duis in erat tempor, luctus enim vel, lacinia magna. Sed aliquam sit amet
+    tortor et faucibus. Sed sed lectus aliquet, dictum nunc in, ultrices sapien.
+    Suspendisse lorem odio, varius in dolor sit amet, fermentum scelerisque orci.
+    Aliquam sit amet felis id ex accumsan ullamcorper. Praesent nec ante eget
+    quam consectetur tempor. Maecenas nec nunc a eros fermentum pellentesque
+    ac in magna. Nam a condimentum metus, cursus tincidunt lectus. Vivamus
+    vitae blandit odio, eu mattis sem. Cras laoreet sed odio vel hendrerit.
+    Vivamus gravida elit non accumsan imperdiet. Praesent auctor turpis tortor,
+    id consectetur velit iaculis vitae. Quisque porttitor tellus ipsum, sit
+    amet vestibulum nibh mollis eu.
+  </p>
+</div>

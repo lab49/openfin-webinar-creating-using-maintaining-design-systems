@@ -6,14 +6,14 @@ import { Badge } from '../Badge';
 import { Header } from '../Header/Header';
 import styles from './Page.module.css';
 
-export interface PageProps {
+export interface Props {
   user?: {};
   onLogin: () => void;
   onLogout: () => void;
   onCreateAccount: () => void;
 }
 
-export const Page: React.FunctionComponent<PageProps> = ({ user, onLogin, onLogout, onCreateAccount }) => (
+export const Page: React.FC<Props> = ({ user, onLogin, onLogout, onCreateAccount }): JSX.Element => (
   <div>
     <Header user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 

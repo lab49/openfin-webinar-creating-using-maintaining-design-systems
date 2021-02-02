@@ -1,18 +1,18 @@
-import React, { ComponentProps } from 'react';
+import React from 'react';
 import classnames from 'classnames';
 
 import styles from './Button.module.css';
 import { Intent } from '../../common/intent';
 import { Size } from '../../common/size';
 
-export interface Props extends ComponentProps<'button'> {
+export interface Props extends React.ComponentProps<'button'> {
   className?: string;
   intent?: Intent;
   size?: Size;
   label: string;
 }
 
-export const Button = ({
+export const Button: React.FC<Props> = ({
   className,
   intent,
   size,

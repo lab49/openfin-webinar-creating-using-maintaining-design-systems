@@ -22,7 +22,7 @@ const baseBlockStyle = {
 export const ColorBlocks = () => (
   <div style={{ display: "flex" }}>
     {colorScales.map((scale) => (
-      <div key={scale} style={{ margin: "0 10px" }}>
+      <div key={scale} style={{ margin: "0 var(--spacing-2)" }}>
         <p
           style={{
             font: "20px sans-serif",

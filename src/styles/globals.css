@@ -2,6 +2,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font: var(--type-style-default);
+  color: var(--color-blue-gray-900);
 }
 
 a {
@@ -14,6 +16,25 @@ a {
 }
 
 :root {
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 48px;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 3px 3px 1px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 3px 8px 2px rgba(0, 0, 0, 0.4);
+
+  --type-style-default: 400 16px sans-serif;
+  --type-style-primary: 400 2.5em sans-serif;
+  --type-style-secondary: 400 1.5em sans-serif;
+  --type-style-tertiary: 400 1.3em sans-serif;
+  --type-style-general-label: 400 1.1em sans-serif;
+  --type-style-secondary-label: 700 1.1em sans-serif;
+
   --color-blue-gray-50: #F8FAFC;
   --color-blue-gray-100: #F1F5F9;
   --color-blue-gray-200: #E2E8F0;

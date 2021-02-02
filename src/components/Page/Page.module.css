@@ -1,60 +1,17 @@
 .content {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  padding: 48px 20px;
+  padding: var(--spacing-6) var(--spacing-2);
   margin: 0 auto;
   max-width: 600px;
-  color: #333;
+  font: var(--type-style)
 }
 
 .subtitle {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 1;
-  margin: 0 0 4px;
+  font: var(--type-style-primary);
+  margin: 0 0 var(--spacing-1);
   display: inline-block;
   vertical-align: top;
 }
 
 .pageAlert {
-  margin: 20px 0;
-}
-
-/* p {
-  margin: 1em 0;
-}
-
-a {
-  text-decoration: none;
-  color: #1ea7fd;
-} */
-
-/* ul {
-  padding-left: 30px;
-  margin: 1em 0;
-}
-
-li {
-  margin-bottom: 8px;
-} */
-
-.tip-wrapper {
-  /* font-size: 13px; */
-  /* line-height: 20px; */
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.tip-wrapper svg {
-  display: inline-block;
-  height: 12px;
-  width: 12px;
-  margin-right: 4px;
-  vertical-align: top;
-  margin-top: 3px;
-}
-
-.tip-wrapper svg path {
-  fill: #1ea7fd;
+  margin: var(--spacing-4) 0;
 }

@@ -1,5 +1,5 @@
 import classnames from 'classnames';
-import React, { FunctionComponent } from 'react';
+import React from 'react';
 import { Intent } from '../../common/intent';
 
 import styles from './Alert.module.css';
@@ -9,7 +9,7 @@ export interface Props {
   intent?: Intent;
 }
 
-export const Alert: FunctionComponent<Props> = ({ className, children, intent }): JSX.Element => {
+export const Alert: React.FC<Props> = ({ className, children, intent }): JSX.Element => {
   const cls = classnames(styles.alert, className, {
     [styles[intent ?? ""]]: intent != null,
   });

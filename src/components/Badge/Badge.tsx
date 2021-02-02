@@ -1,4 +1,4 @@
-import React, { ComponentProps, FunctionComponent } from 'react';
+import React from 'react';
 import classnames from 'classnames';
 
 import styles from './Badge.module.css';
@@ -9,7 +9,7 @@ export interface Props {
   pill?: boolean;
 }
 
-export const Badge: FunctionComponent<Props> = ({
+export const Badge: React.FC<Props> = ({
   intent,
   pill = false,
   children,
