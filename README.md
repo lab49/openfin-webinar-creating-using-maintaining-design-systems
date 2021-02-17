@@ -61,6 +61,6 @@ As mentioned during the talk, there are a number of helpful links and resources:
 
 #### Contacts:
 
-Brian McAllister
-Interactive Practice Head
-[brian.mcallister@lab49.com](brian.mcallister@lab49.com)
+> Brian McAllister  
+> Interactive Practice Head  
+> [brian.mcallister@lab49.com](brian.mcallister@lab49.com)
