@@ -14,6 +14,8 @@ The purpose of this codebase is to demonstrate the various parts that make up a 
 
 While real design systems are much more comprehensive and complex, the intent of this example is to provide a starting point, and a view into what a living style guide looks like.
 
+Feel free to fork, use, share, and modify this codebase.
+
 ## Getting started
 
 1. Make sure you have `node` and `npm`. We recommend [nvm](https://github.com/nvm-sh/nvm)
