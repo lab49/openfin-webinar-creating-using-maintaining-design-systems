@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a companion repository for the "Creating, Using, and Maintaining a Design System" [webinar](https://www.linkedin.com/posts/openfin_register-openfin-presents-lab49-creating-activity-6765297027396993024-PyMh/) hosted by [OpenFin](https://openfin.co/).
 
-## Getting Started
+This webinar took place on Februrary 17th, 2021.
 
-First, run the development server:
+## Intro
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This codebase contains:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. A Next.js application
+2. A Storybook application
+3. A script to run the Next.js application in OpenFin
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The purpose of this codebase is to demonstrate the various parts that make up a design system, with a very simple design system and component library implementation.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+While real design systems are much more comprehensive and complex, the intent of this example is to provide a starting point, and a view into what a living style guide looks like.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Getting started
 
-## Learn More
+1. Make sure you have `node` and `npm`. We recommend [nvm](https://github.com/nvm-sh/nvm)
+2. Clone the repository
+3. `$ npm install`
+4. `$ npm run storybook`
+5. `$ npm run dev`
+6. `$ npm run openfin`
 
-To learn more about Next.js, take a look at the following resources:
+Storybook will start at [http://localhost:6006](http://localhost:6006). Visit that URL in your browser to explore the living style guide.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The demo application will start at [http://localhost:3000](http://localhost:3000). Additionally, the application can be run in OpenFin, and the `openfin-cli` tool will automatically launch and display the main window.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Talk notes
 
-## Deploy on Vercel
+As mentioned during the talk, there are a number of helpful links and resources:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Book and other resources:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- https://atomicdesign.bradfrost.com/
+- https://en.wikipedia.org/wiki/Inner_source
+- https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar
+
+#### Design concepts and tools:
+
+- https://airbnb.design/designops-airbnb/
+- https://www.contrast.app/
+- https://www.abstract.com/
+
+#### Other design systems:
+
+- https://blueprintjs.com/
+- https://www.lightningdesignsystem.com/
+- https://atlassian.design/
+- https://polaris.shopify.com/
+- https://www.carbondesignsystem.com/
+
+#### Blog post:
+
+- https://www.lab49.com/insights/building-effective-design-systems-driving-productivity-and-avoiding-pitfalls/
+
+#### Contacts:
+
+Brian McAllister
+Interactive Practice Head
+[brian.mcallister@lab49.com](brian.mcallister@lab49.com)
