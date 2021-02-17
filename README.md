@@ -4,10 +4,12 @@ This webinar took place on Februrary 17th, 2021.
 
 ## Intro
 
+Creating, using, and maintaining a design system is a complex task that requires participation from many parts of an organization. In this talk, we'll discuss why one might want to consider creating a design system to build, organize, and maintain the user interfaces of your applications.
+
 This codebase contains:
 
-1. A Next.js application
-2. A Storybook application
+1. A [Next.js](https://nextjs.org/) application
+2. A [Storybook](https://storybook.js.org/) application
 3. A script to run the Next.js application in OpenFin
 
 The purpose of this codebase is to demonstrate the various parts that make up a design system, with a very simple design system and component library implementation.
